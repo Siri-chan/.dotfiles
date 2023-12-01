@@ -5,7 +5,8 @@ return require('packer').startup(function(use)
 	use { 
 		"catppuccin/nvim", 
 		as = "catppuccin", 
-		config = function() 
+		config = function()
+			vim.o.termguicolors = true
 			vim.cmd.colorscheme "catppuccin-mocha" 
 		end 
 	}
