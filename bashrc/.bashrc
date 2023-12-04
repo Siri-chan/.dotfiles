@@ -7,6 +7,8 @@
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export QT_QPA_PLATFORMTHEME="qt6ct"
+export SHELL="/usr/bin/fish"
+
 eval `fnm env`
 
 alias ls='ls --color=auto'
