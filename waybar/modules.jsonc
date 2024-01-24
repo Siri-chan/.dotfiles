@@ -1,0 +1,25 @@
+{
+	"modules-left": [
+		"hyprland/workspaces",
+		"custom/mpd",
+		"network",
+		//	"pulseaudio-slider",
+		"pulseaudio",
+	],
+	// TODO: The pulseaudio-slider module doesn't exist until next waybar version.
+	"modules-center": [
+		// TODO make a custom module for dunst here ig
+		"hyprland/window",
+	],
+	"modules-right": [
+		"tray",
+		"backlight",
+		"battery",
+		"clock",
+	],
+	"include": [
+		"~/.config/waybar/modules-left.jsonc",
+		"~/.config/waybar/modules-center.jsonc",
+		"~/.config/waybar/modules-right.jsonc",
+	]
+}

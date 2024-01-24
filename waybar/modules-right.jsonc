@@ -1,0 +1,43 @@
+{
+	"backlight": {
+		"device": "intel_backlight",
+			"format": "{icon} {percent}%",
+			"format-icons": [
+			"󰃛", 
+			"󰃜", 
+			"󰃞", 
+			"󰃟", 
+			"󰃝", 
+			"󰃠"]
+	},
+		"battery": {
+			"bat": "BAT1",
+			"format": "{icon}   {capacity}%", 
+			
+    "format-icons": ["", "", "", "", ""],
+			"states": {
+				"warning": 25,
+				"critical": 10,
+			},
+			// TODO: In CSS set colors for warning, critical and charging
+			"tooltip": true,
+		},
+		"clock": {
+			"timezone": "Australia/Melbourne",
+			// TODO: Build in a Calendar and make sure this formats well. I havent been able to spare the effort for now.
+			"tooltip": true,
+			"tooltip-format": "<tt><small>{calendar}</small></tt>",
+			"calendar": {
+				"mode": "month",
+				"on-scroll": 1,
+				// TODO: Format this nicely.
+				"format": {
+					"today": "<span color='#ff0000'><u>{}</u></span>"
+				}
+			},
+			"actions": {
+				"on-scroll-up": "shift_up",
+				"on-scroll-down": "shift_down",
+			},
+		},
+}

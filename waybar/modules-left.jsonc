@@ -1,0 +1,34 @@
+{
+	"hyprland/workspaces": {
+		// TODO: Better Workspace Labels. 
+	},
+	"network": {
+		"interface": "wlan0",
+		"format": "",
+		"format-wifi": "{icon} {essid}",
+		"format-icons": [
+			"󰤯",
+			"󰤟",
+			"󰤢",
+			"󰤥",
+			"󰤨",
+		],
+		"format-disconnected": "󰤮",
+		"on-click": "alacritty -e iwctl",
+	},
+	"custom/mpd": {
+		"format": "  󰎆 {}  ",
+		"interval": 5,
+		"exec": "mpc current",
+		"execif": "pgrep mpd",
+		"on-click": "mpc toggle",
+		"on-click-right": "vimpc" // unsure if i want to use this or smth else longterm 
+	},
+	//TODO: Configure PulseAudio Module(s)
+	"pulseaudio": {
+		"format-muted": "󰝟",
+		"format": "󰖀 {volume}%",
+		"format-bluetooth": "󰖀 {volume}% 󰂯",
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+	}
+}
