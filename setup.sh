@@ -7,3 +7,4 @@ ln -s ~/.dotfiles/waybar/ ~/.config/
 ln -s ~/.dotfiles/neofetch/ ~/.config/
 ln -s ~/.dotfiles/fish/ ~/.config/
 ln -s ~/.dotfiles/bashrc/.bashrc ~
+ls -s ~/.dotfiles/fcitx5 ~/.config/
