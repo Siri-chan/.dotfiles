@@ -1,0 +1,37 @@
+== Arch Package Repository (`yay -S` or `sudo pacman -S`) ==
+ttf-jetbrains-mono-nerd
+rustup
+fish
+git
+hyprland
+hyprpaper
+waybar
+alacritty
+nvim
+mpd
+mpc
+wofi
+imagemagick
+wl-clipboard
+dunst
+noto-fonts-cjk
+ttf-ubuntu-nerd
+grim
+slurp
+cliphist
+
+== Arch User Repository (`yay -S`) ==
+pixterm
+sonata
+oxygen-cursors
+
+== `cargo install` ==
+fnm
+
+== Other ==
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish (Oh My Fish)
+pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si(yay)
+git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim (Packer)
+
+== Oh My Fish (`omf install`) ==
+bobthefish

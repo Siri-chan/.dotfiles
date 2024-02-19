@@ -1,0 +1,3 @@
+put my fcitx conf here
+remove existing folders of .config/* before trying to `ln`
+probably try making steam float and see if it fixes it not properly launching from the .desktop
