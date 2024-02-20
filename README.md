@@ -19,3 +19,5 @@ As of now, the device specific branches include:
 My Framework Laptop 13 with a 13th-Gen Intel CPU, and a Japanese input cover.
 Includes things like `eDP-1` for the embedded display, and a `jp` keyboard layout.
 
+## `desertrose`
+My Desktop, with a Ryzen 7600 and Intel Arc A750.
