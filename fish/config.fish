@@ -11,6 +11,14 @@ set -g theme_show_exit_status yes
 set -g theme_color_scheme terminal-dark
 ## TODO: I kinda want to remove the date from RPS1
 
+function update
+	yay && rustup update && cargo install-update --all && omf update && nvim -c PackerSync
+end
+
+function ls 
+	eza $EXA_STANDARD_OPTIONS
+end
+
 # Other Config
 set -g fish_prompt_pwd_dir_length 0
 

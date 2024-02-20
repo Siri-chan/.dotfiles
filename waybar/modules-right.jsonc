@@ -27,7 +27,7 @@
 			"tooltip": true,
 		},
 		"clock": {
-			"timezone": "Australia/Melbourne",
+			"timezone": "Asia/Tokyo",
 			// TODO: Build in a Calendar and make sure this formats well. I havent been able to spare the effort for now.
 			"tooltip": true,
 			"tooltip-format": "<tt><small>{calendar}</small></tt>",

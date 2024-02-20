@@ -19,19 +19,28 @@ ttf-ubuntu-nerd
 grim
 slurp
 cliphist
+fzf
 
 == Arch User Repository (`yay -S`) ==
 pixterm
 sonata
 oxygen-cursors
 
-== `cargo install` ==
+== `cargo install --locked` ==
 fnm
+cargo-update
+zoxide
+eza
 
 == Other ==
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish (Oh My Fish)
-pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si(yay)
+pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si (yay)
 git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim (Packer)
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher (fisher)
 
 == Oh My Fish (`omf install`) ==
 bobthefish
+
+== Fisher (`fisher install`) ==
+fish-exa
+
