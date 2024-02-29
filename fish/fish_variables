@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export GTK_IM_MODULE:wayland
+SETUVAR --export GTK_IM_MODULE:fcitx
 SETUVAR --export QT_IM_MODULE:fcitx
 SETUVAR --export SDL_IM_MODULE:fcitx
 SETUVAR --export XMODIFIERS:\x40im\x3dfcitx
