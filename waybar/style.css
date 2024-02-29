@@ -1,0 +1,47 @@
+@import url("style.css.d");
+
+* {
+	font-family: 'Ubuntu Nerd Font', sans-serif;
+}
+
+window#waybar {
+	background: #222B3D;
+	border-top: 2px solid #fff;
+	padding-bottom: 0;
+
+}
+
+#pulseaudio.muted {
+	color: #fff;
+	background: #000;
+}
+
+#pulseaudio.bluetooth {
+	background: blue;
+	color: #fff;
+}
+
+#battery.charging, #battery.plugged {
+	background: lime;
+}
+
+#battery.warning:not(.charging) {
+	background: yellow;
+}
+
+#battery.critical:not(.charging) {
+	background: red;
+}
+
+#backlight {
+	background: #64727D;
+}
+
+#tray {
+	border-top: 2px solid #fff;
+	background: #222B3D;
+}
+
+#custom-mpd {
+	background: #64727D;
+}
