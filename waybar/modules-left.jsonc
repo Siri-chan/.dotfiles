@@ -19,10 +19,10 @@
 	"custom/mpd": {
 		"format": "  󰎆 {}  ",
 		"interval": 5,
-		"exec": "mpc current",
+		"exec": "$HOME/.config/waybar/mpc_current.fish",
 		"execif": "pgrep mpd",
 		"on-click": "mpc toggle",
-		"on-click-right": "vimpc" // unsure if i want to use this or smth else longterm 
+		"on-click-right": "sonata",  
 	},
 	//TODO: Configure PulseAudio Module(s)
 	"pulseaudio": {

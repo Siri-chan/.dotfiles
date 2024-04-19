@@ -6,9 +6,14 @@
 
 window#waybar {
 	background: #222B3D;
-	border-top: 2px solid #fff;
+	/* border-top: 2px solid #fff; */
 	padding-bottom: 0;
 
+}
+
+#workspaces button.active {
+	color: #0f0;
+	background-color: #202838;
 }
 
 #pulseaudio.muted {
@@ -38,7 +43,7 @@ window#waybar {
 }
 
 #tray {
-	border-top: 2px solid #fff;
+/*	border-top: 2px solid #fff;*/
 	background: #222B3D;
 }
 
