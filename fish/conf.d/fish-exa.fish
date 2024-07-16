@@ -12,7 +12,7 @@ function __fish_exa_install --on-event fish-exa_install
         set -Ux __FISH_EXA_BINARY exa
     end
 
-    set -Ux __FISH_EXA_BASE_ALIASES l ll lg le lt lc lo
+    set -Ux __FISH_EXA_BASE_ALIASES l ls ll lg le lt lc lo
     set -Ux __FISH_EXA_EXPANDED a d i id aa ad ai aid aad aai aaid
     set -Ux __FISH_EXA_EXPANDED_OPT_NAME LA LD LI LID LAA LAD LAI LAID LAAD LAAI LAAID
     set -Ux __FISH_EXA_OPT_NAMES
@@ -23,6 +23,7 @@ function __fish_exa_install --on-event fish-exa_install
 
     # Base aliases
     _set EXA_L_OPTIONS
+	_set EXA_LS_OPTIONS
     _set EXA_LL_OPTIONS "--long"
     _set EXA_LG_OPTIONS "--git" "--git-ignore" "--long"
     _set EXA_LE_OPTIONS "--extended" "--long"
