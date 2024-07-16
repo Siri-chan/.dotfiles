@@ -12,11 +12,7 @@ set -g theme_color_scheme terminal-dark
 ## TODO: I kinda want to remove the date from RPS1
 
 function update
-	yay && rustup update && cargo install-update --all && omf update && nvim -c PackerSync
-end
-
-function ls 
-	eza $EXA_STANDARD_OPTIONS
+	yay && rustup update && cargo install-update --all && omf update && fish_update_completions && nvim -c PackerSync
 end
 
 # Other Config
@@ -25,3 +21,10 @@ set -g fish_prompt_pwd_dir_length 0
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
+
+# pnpm
+set -gx PNPM_HOME "/home/siri/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
