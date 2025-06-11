@@ -17,12 +17,12 @@
 		"on-click": "alacritty -e iwctl",
 	},
 	"custom/mpd": {
-		"format": "  󰎆 {}  ",
-		"interval": 5,
-		"exec": "mpc current",
+		"format": "  󰎆  {}  ",
+		"interval": 1,
+		"exec": "~/.config/waybar/mpd.fish",
 		"execif": "pgrep mpd",
 		"on-click": "mpc toggle",
-		"on-click-right": "vimpc" // unsure if i want to use this or smth else longterm 
+		"on-click-right": "sonata" // unsure if i want to use this or smth else longterm 
 	},
 	//TODO: Configure PulseAudio Module(s)
 	"pulseaudio": {

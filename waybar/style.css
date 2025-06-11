@@ -1,24 +1,106 @@
 @import url("style.css.d");
+@import url("colors.css");
 
 * {
 	font-family: 'Ubuntu Nerd Font', sans-serif;
 }
 
 window#waybar {
-	background: #222B3D;
-	border-top: 2px solid #fff;
+	background: transparent;
+	border: none;
 	padding-bottom: 0;
+	margin-bottom: 2px;
+	color: @text;
+}
 
+#pulseaudio {
+	border-radius: 10px;
+	background: @crust;
+	color: @text;
 }
 
 #pulseaudio.muted {
-	color: #fff;
-	background: #000;
+	background: @mantle;
+	color: @peach;
 }
 
 #pulseaudio.bluetooth {
 	background: blue;
 	color: #fff;
+}
+
+/*
+#window {
+	border-bottom: 2px solid @subtext0;
+	background: transparent;
+	background: radial-gradient(
+		50% 100% at 50% bottom,
+		green 0%,
+		green 20%,
+		transparent 80% 
+	);
+	padding-left: 20px;
+	padding-right: 20px;
+}
+*/
+
+#window {
+	border-radius: 10px;
+	color: @text;
+	background: @mantle;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: 1px solid @sapphire;
+}
+
+window#waybar.empty #window {
+	opacity: 0;
+}
+
+/*
+window#waybar.solo {
+	opacity: 0;
+}
+*/
+
+#workspaces {
+	margin-right: 10px;
+	background: @crust;
+	border-radius: 10px;
+	border-bottom: none;
+}
+
+#workspaces button:hover {
+	box-shadow: inherit;
+    text-shadow: inherit;
+	background: @base;
+	border-radius: inherit;
+	border-bottom: none;
+}
+
+#workspaces button.focused {
+	border-bottom: none;
+	border-radius: inherit;
+	background: @green;
+	color: @mantle;
+}
+
+#workspaces button.urgent {
+	border-bottom: none;
+	border-radius: inherit;
+	background: @red;
+	color: @mantle;
+}
+
+#workspaces button.active {
+	border-bottom: none;
+	border-radius: inherit;
+	background: @green;
+	color: @mantle;
+}
+
+#battery {
+	border-radius: 10px;
 }
 
 #battery.charging, #battery.plugged {
@@ -34,14 +116,35 @@ window#waybar {
 }
 
 #backlight {
+	border-radius: 10px;
 	background: #64727D;
 }
 
 #tray {
-	border-top: 2px solid #fff;
-	background: #222B3D;
+	border-radius: 10px 0px 0px 10px;
+	background: @base;
+	margin-right: -2px;
+}
+
+#clock {
+	border-radius: 0px 10px 10px 0px;
+	margin-left: -2px;
+	background: @surface1;
+}
+
+#network {
+	background: @mantle;
+	color: @sapphire;
+	border-radius: 10px;
+	margin-right: 5px;
+}
+
+#network.disconnected {
+	color: @red;
 }
 
 #custom-mpd {
-	background: #64727D;
+	border-radius: 10px;
+	background: @surface0;
+	border: 1px solid @mauve;
 }
