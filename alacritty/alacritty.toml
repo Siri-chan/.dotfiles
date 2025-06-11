@@ -1,4 +1,3 @@
-import = ["/home/siri/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
 
 [env]
 TERM = "xterm-256color"
@@ -8,3 +7,6 @@ size = 12.0
 
 [font.normal]
 family = "JetBrainsMono Nerd Font Mono"
+
+[general]
+import = ["/home/siri/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
