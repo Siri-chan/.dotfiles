@@ -10,6 +10,11 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
   ensure_installed = {},
   handlers = {
-    lsp_zero.default_setup,
+	function(server_name)
+      require('lspconfig')[server_name].setup({
+			single_file_support = server_name == 'ts_ls'
+	  })
+    end,
+   -- lsp_zero.default_setup,
   },
 })

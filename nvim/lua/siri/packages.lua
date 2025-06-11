@@ -43,4 +43,5 @@ return require('packer').startup(function(use)
 			{'L3MON4D3/LuaSnip'},
 		}
 	}
+    use { "L3MON4D3/LuaSnip", run = "make install_jsregexp" }
 end)
