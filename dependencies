@@ -3,8 +3,10 @@ ttf-jetbrains-mono-nerd
 rustup
 fish
 git
-hyprland
-hyprpaper
+hyprlang-git
+hyprland-git
+hyprpaper-git
+hyprcursor-git
 waybar
 alacritty
 nvim
@@ -31,6 +33,7 @@ fnm
 cargo-update
 zoxide
 eza
+ripgrep
 
 == Other ==
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish (Oh My Fish)
